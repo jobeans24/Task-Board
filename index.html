@@ -24,54 +24,7 @@
     <div class="text-center mb-5">
       <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#formModal">Add Task</button>
     </div>
-    <!-- Todo: Create a modal with a form to add tasks -->
-    <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="formModalLabel">Add Task</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-                <form id="task-form">
-                <div class="mb-3">
-                    <label for="task-name" class="form-label">Task Name</label>
-                    <input type="text" class="form-control" id="task-name" name="task-name" required />
-                </div>
-                <div class="mb-3">
-                    <label for="task-description" class="form-label">Task Description</label>
-                    <textarea class="form-control" id="task-description" name="task-description" rows="3" required></textarea>
-                </div>
-                <div class="mb-3">
-                    <label for="task-due-date" class="form-label">Due Date</label>
-                    <input type="date" class="form-control" id="task-due-date" name="task-due-date" required />
-                </div>
-                <div class="mb-3">
-                    <label for="task-priority" class="form-label">Priority</label>
-                    <select class="form-select" id="task-priority" name="task-priority" required>
-                        <option value="low">Low</option>
-                        <option value="medium">Medium</option>
-                        <option value="high">High</option>
-                    </select>
-                </div>
-                <div class="mb-3">
-                    <label for="task-assignee" class="form-label
-                        ">Assignee</label>
-                    <input type="text" class="form-control" id="task-assignee" name="task-assignee" required />
-                </div>
-                <div class="mb-3">
-                    <label for="task-status" class="form-label">Status</label>
-                    <select class="form-select" id="task-status" name="task-status" required>
-                        <option value="to-do">To Do</option>
-                        <option value="in-progress">In Progress</option>
-                        <option value="done">Done</option>
-                    </select>
-                </div>
-                <button type="submit" class="btn btn-primary">Add Task</button>
-            </form>
-            </div>
-        </div>
-    </div>
+   
     <div class="row swim-lanes text-center justify-content-between">
       <div class="col-12 col-lg-4 d-flex">
         <div id="to-do" class="card border-light mb-3 lane flex-grow-1">
@@ -93,18 +46,58 @@
           </div>
         </div>
         </div>
-        <div class="col-12 col-lg-4 d-flex">
-          <div id="done" class="card border-light mb-3 lane flex-grow-1">
-            <div class="card-header bg-white">
-              <h2 class="card-title mb-1">Done</h2>
+      <div class="col-12 col-lg-4 d-flex">
+        <div id="done" class="card border-light mb-3 lane flex-grow-1">
+          <div class="card-header bg-white">
+            <h2 class="card-title">Done</h2>
             </div>
             <div class="card-body bg-light">
               <div id="done-cards"></div>
-          </div>
-          </div>
-      </div>
+            </div>
+        </div>
+      </div>  
     </div>
-  </div>
+    <!-- Todo: Create a modal with a form to add tasks -->
+    <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="formModalLabel">Add Task</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form id="task-form">
+                <div class="mb-3">
+                  <label for="task-name" class="form-label">Task Name</label>
+                  <input type="text" class="form-control" id="task-name" name="task-name" required />
+                </div>
+                <div class="mb-3">
+                  <label for="task-description" class="form-label">Task Description</label>
+                  <textarea class="form-control" id="task-description" name="task-description" rows="3" required></textarea>
+                </div>
+                <div class="mb-3">
+                  <label for="task-due-date" class="form-label">Due Date</label>
+                  <input type="date" class="form-control" id="task-due-date" name="task-due-date" required />
+                  </div>
+                  <div class="mb-3">
+                      <label for="task-status" class="form-label">Status</label>
+                      <select class="form-select" id="task-status" name="task-status" required>
+                        <option value="to-do">To Do</option>
+                        <option value="in-progress">In Progress</option>
+                        <option value="done">Done</option>
+                      </select>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Add Task</button>
+              </form>
+          </div>    
+        </div>
+      </div> 
+    </div>
+
+            <footer class="p-4 text-center border-top border-5">
+              <p>&copy; 2022 Task Board</p>
+            </footer>
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

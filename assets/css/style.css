@@ -14,14 +14,6 @@ body {
   .task-card:hover {
     cursor: grab;
   }
-  
-.task-card {
-  margin: 0 auto;
-}
-
-.task-card:hover {
-  cursor: grab;
-}
 
 .task-card.yellow {
   background-color: yellow;
