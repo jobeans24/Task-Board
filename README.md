@@ -21,4 +21,7 @@ SO THAT I can add individual project tasks, manage their state of progress and t
 
 ## Description
 
+    The webpage will allow the user to create a task board containing information about the projects the user is currently working on. The information includes the title of the task/project, the description, the date the task/project is to be completed, the priority level which has the selection of low, medium or high, and whether the task/project is To Do, In Progress, or Completed.
+    The Task Board Manager allows the user to make a designated list to prioritize tasks and projects and show the importance of when assignments are to be completed.
+
 ## Images
